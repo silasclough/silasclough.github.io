@@ -69,7 +69,9 @@
     box-shadow: 0 6px 18px rgba(10,132,255,.35); transition: transform .15s ease;
   }
   .save:active { transform: scale(.96); }
-  .benny { background: linear-gradient(135deg, #30d158, #0a84ff); }
+  .benny { background: #ff6a2a; overflow: hidden; }
+  .benny img { width: 100%; height: 100%; display: block; }
+  .link.benny-link { border-color: rgba(255,106,42,.35); box-shadow: 0 0 0 1px rgba(255,106,42,.12), 0 4px 22px rgba(255,106,42,.32), 0 8px 24px rgba(0,0,0,.06); }
   .note { text-align: center; color: var(--muted); font-size: 13px; margin: 4px 0 0; }
   .mail { background: linear-gradient(135deg, #5ac8fa, #0a84ff); }
 
@@ -150,8 +152,8 @@
 
   <section class="group">
     <h2>Meet Benny</h2>
-    <a class="link" href="sms:+15633075644?&amp;body=hey%20benny%20%23card">
-      <span class="icon benny"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.4 1.3 4.5 3.4 6-.2 1.3-.8 2.5-1.7 3.5a.5.5 0 00.5.8c2-.3 3.7-1.1 4.9-2A11.5 11.5 0 0012 19c5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span>
+    <a class="link benny-link" href="sms:+15633075644?&amp;body=hey%20benny%20%23card">
+      <span class="icon benny"><img src="benny.png" alt=""></span>
       <span class="text"><div class="title">Text Benny</div><div class="sub">My AI accountability buddy. No app, just text.</div></span>
       <svg class="chev" viewBox="0 0 10 16"><path d="M2 2l6 6-6 6"/></svg>
     </a>
