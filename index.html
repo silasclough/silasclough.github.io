@@ -63,6 +63,13 @@
   .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
   h1 { font-size: 34px; line-height: 1.1; letter-spacing: -.02em; font-weight: 700; margin: 0 0 8px; }
   .tagline { margin: 0; color: var(--muted); font-size: 17px; line-height: 1.4; }
+  .save {
+    display: inline-block; margin-top: 18px; padding: 12px 24px; border-radius: 999px;
+    background: #0a84ff; color: #fff; font-size: 17px; font-weight: 600; text-decoration: none;
+    box-shadow: 0 6px 18px rgba(10,132,255,.35); transition: transform .15s ease;
+  }
+  .save:active { transform: scale(.96); }
+  .mail { background: linear-gradient(135deg, #5ac8fa, #0a84ff); }
 
   .group { margin-bottom: 24px; }
   .group h2 {
@@ -100,10 +107,10 @@
 <body>
 <main>
   <header>
-    <!-- To use a photo: save it as photo.jpg next to this file and swap the "S" for <img src="photo.jpg" alt="Silas"> -->
-    <div class="avatar" aria-hidden="true">S</div>
+    <div class="avatar"><img src="photo.jpg" alt="Silas Clough"></div>
     <h1>Hi, I'm Silas</h1>
     <p class="tagline">Musician &amp; creative. Nice to meet you.</p>
+    <a class="save" href="silas-clough.vcf" download="Silas Clough.vcf">Save Contact</a>
   </header>
 
   <section class="group">
@@ -122,6 +129,11 @@
 
   <section class="group">
     <h2>Connect</h2>
+    <a class="link" href="mailto:contactresonatemedia@gmail.com">
+      <span class="icon mail"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2zm.5 2l8.5 6 8.5-6z" fill-rule="evenodd"/><path d="M3 7.2l9 6.3 9-6.3V7H3z" opacity="0"/></svg></span>
+      <span class="text"><div class="title">Email</div><div class="sub">contactresonatemedia@gmail.com</div></span>
+      <svg class="chev" viewBox="0 0 10 16"><path d="M2 2l6 6-6 6"/></svg>
+    </a>
     <a class="link" href="https://resonatemedia.pro" target="_blank" rel="noopener">
       <span class="icon web"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 9h-3.05a15.7 15.7 0 00-1.38-5.5A8.03 8.03 0 0118.93 11zM12 4.04c.83 1.2 1.48 2.53 1.91 4.96h-3.82C10.52 6.57 11.17 5.24 12 4.04zM4.26 14a8.2 8.2 0 010-4h3.38a16.5 16.5 0 000 4H4.26zm.81 2h3.05a15.7 15.7 0 001.38 5.5A8.03 8.03 0 015.07 16zm3.05-8H5.07a8.03 8.03 0 014.43-5.5A15.7 15.7 0 008.12 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-4.96h3.82c-.43 2.43-1.08 3.76-1.91 4.96zM14.34 14H9.66a14.7 14.7 0 010-4h4.68a14.7 14.7 0 010 4zm.16 7.5c.7-1.26 1.2-3.1 1.38-5.5h3.05a8.03 8.03 0 01-4.43 5.5zM16.36 14a16.5 16.5 0 000-4h3.38a8.2 8.2 0 010 4h-3.38z"/></svg></span>
       <span class="text"><div class="title">Resonate Media</div><div class="sub">resonatemedia.pro</div></span>
